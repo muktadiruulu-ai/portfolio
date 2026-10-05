@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Аты-жөнүңүз — педагог, изилдөөчү жана санарип долбоорлордун автору</title>
+<meta name="description" content="Аты-жөнүңүздүн жеке портфолиосу: араб тили, билим берүү, изилдөө, AI жана веб-долбоорлор. Кыргызстан.">
+<meta name="theme-color" content="#F6F7F9">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Аты-жөнүңүз — жеке портфолио">
+<meta property="og:description" content="Билим берүү, тил жана технологиянын кесилишиндеги долбоорлор.">
+<meta property="og:locale" content="ky_KG">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Аты-жөнүңүз","jobTitle":"Педагог, изилдөөчү жана санарип долбоорлордун автору","address":{"@type":"PostalAddress","addressCountry":"KG"},"knowsAbout":["Араб тили","Билим берүү","AI","Веб-дизайн"]}
+</script>
+<style>
+/* ============ Tokens ============ */
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --ink:#12151C; --muted:#5B6372; --line:#E3E6EC;
+  --accent:#2547D9; --accent-ink:#FFFFFF; --accent-soft:#E8ECFC;
+  --band:#12151C; --band-ink:#F2F4F8; --band-muted:#9AA3B5;
+  --shadow:0 1px 2px rgba(18,21,28,.04),0 14px 32px -18px rgba(18,21,28,.14);
+  --shadow-up:0 2px 4px rgba(18,21,28,.05),0 24px 44px -20px rgba(18,21,28,.22);
+  --r-lg:28px; --r-md:20px; --r-sm:12px;
+  --font:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --num:"Unbounded","Onest",system-ui,sans-serif;
+  --nav-h:68px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D0F14; --surface:#151821; --ink:#EEF0F5; --muted:#98A1B3; --line:#252A36;
+    --accent:#7E97FF; --accent-ink:#0D0F14; --accent-soft:#1A2140;
+    --band:#131827; --band-ink:#EEF0F5; --band-muted:#8F99B0;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 32px -18px rgba(0,0,0,.6);
+    --shadow-up:0 2px 4px rgba(0,0,0,.3),0 24px 44px -20px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D0F14; --surface:#151821; --ink:#EEF0F5; --muted:#98A1B3; --line:#252A36;
+  --accent:#7E97FF; --accent-ink:#0D0F14; --accent-soft:#1A2140;
+  --band:#131827; --band-ink:#EEF0F5; --band-muted:#8F99B0;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 32px -18px rgba(0,0,0,.6);
+  --shadow-up:0 2px 4px rgba(0,0,0,.3),0 24px 44px -20px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+
+/* ============ Base ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+.sec{padding:112px 0}
+.sec-head{max-width:640px;margin-bottom:48px}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.1;letter-spacing:-.025em;font-weight:650}
+.sec-head p{margin-top:14px;color:var(--muted)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ============ Buttons ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;border:1px solid var(--line);background:transparent;font-weight:600;font-size:1rem;transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease,border-color .25s ease}
+.btn:hover{transform:translateY(-2px);border-color:var(--ink)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{border-color:var(--accent);box-shadow:0 14px 28px -12px var(--accent);filter:brightness(1.06)}
+.btn-sm{padding:10px 20px;font-size:.95rem}
+
+/* ============ Navbar ============ */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;transition:background-color .3s ease,box-shadow .3s ease,border-color .3s ease;border-bottom:1px solid transparent}
+.nav.scrolled{background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:var(--line)}
+.nav-in{height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:650;letter-spacing:-.01em}
+.mono{width:38px;height:38px;border-radius:12px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:.9rem;font-weight:700}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{padding:8px 14px;border-radius:999px;font-size:.95rem;color:var(--muted);font-weight:500;transition:color .2s ease,background-color .2s ease}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a.active{color:var(--ink);background:var(--accent-soft)}
+.nav-tools{display:flex;align-items:center;gap:8px}
+.icon-btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;transition:transform .25s ease,border-color .25s ease}
+.icon-btn:hover{border-color:var(--ink);transform:rotate(12deg)}
+.icon-btn svg{width:20px;height:20px}
+.menu-btn{display:none}
+.menu-btn:hover{transform:none}
+
+/* ============ Hero ============ */
+.hero{position:relative;padding:56px 0 120px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero-bg .lattice{position:absolute;right:-6%;top:-8%;width:min(760px,90vw);aspect-ratio:1;opacity:.5;color:var(--line);-webkit-mask-image:radial-gradient(closest-side,#000 30%,transparent 100%);mask-image:radial-gradient(closest-side,#000 30%,transparent 100%)}
+.hero-bg .ring{position:absolute;left:-180px;bottom:-260px;width:520px;aspect-ratio:1;border-radius:50%;border:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;min-height:calc(100vh - var(--nav-h) - 80px)}
+.hero h1{font-size:clamp(2.5rem,5.8vw,4.7rem);line-height:1.03;letter-spacing:-.035em;font-weight:650}
+.hero .role{margin-top:22px;font-size:clamp(1.15rem,2vw,1.45rem);font-weight:500}
+.hero .intro{margin-top:16px;max-width:30em;color:var(--muted)}
+.hero-cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{position:relative;justify-self:center;width:min(420px,86%)}
+.arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px 32px 32px;overflow:hidden;background:var(--accent-soft);border:1px solid var(--line);box-shadow:var(--shadow-up)}
+.arch img{width:100%;height:100%;object-fit:cover;transition:transform .9s ease}
+.hero-art:hover .arch img{transform:scale(1.04)}
+.arch-line{position:absolute;inset:0;border-radius:999px 999px 32px 32px;border:1.5px solid var(--accent);transform:translate(18px,18px);z-index:-1}
+.orbit{position:absolute;inset:-12%;z-index:-1;width:124%;left:-12%;top:-12%;color:var(--accent);opacity:.5;animation:spin 70s linear infinite}
+.chip-float{position:absolute;padding:9px 16px;border-radius:999px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);font-size:.9rem;font-weight:600;animation:bob 6s ease-in-out infinite}
+.chip-float i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:8px}
+.cf1{left:-8%;top:16%}
+.cf2{right:-10%;top:48%;animation-delay:-2s}
+.cf3{left:-4%;bottom:10%;animation-delay:-4s}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.js .hero-copy>*, .js .hero-art{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.js .hero-copy>*:nth-child(1){animation-delay:.05s}
+.js .hero-copy>*:nth-child(2){animation-delay:.18s}
+.js .hero-copy>*:nth-child(3){animation-delay:.3s}
+.js .hero-copy>*:nth-child(4){animation-delay:.42s}
+.js .hero-art{animation-delay:.3s}
+
+/* ============ Cards ============ */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:30px;box-shadow:var(--shadow)}
+.card h3{font-size:1.2rem;letter-spacing:-.01em;font-weight:650;margin-bottom:14px}
+.card p{color:var(--muted)}
+
+/* About */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.b-bio{grid-column:span 4}
+.b-edu{grid-column:span 2;background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.b-edu p,.b-edu li{color:color-mix(in srgb,var(--bg) 72%,transparent)}
+.b-edu strong{color:var(--bg)}
+.b-int{grid-column:span 3}
+.b-do{grid-column:span 3}
+.b-str{grid-column:span 6;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-radius:36px}
+.b-bio .lead{font-size:clamp(1.2rem,2vw,1.55rem);line-height:1.4;color:var(--ink);letter-spacing:-.015em;font-weight:500}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{padding:6px 14px;border-radius:999px;background:var(--accent-soft);color:var(--ink);font-size:.9rem;font-weight:500}
+.dots li{position:relative;padding-left:20px;margin-bottom:8px;color:var(--muted)}
+.dots li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.b-str h3{margin:0 0 6px;font-size:1.05rem}
+.b-str p{font-size:.95rem}
+.b-str .lbl{grid-column:1/-1;margin:0 0 -6px;font-weight:650;font-size:1.2rem}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.skill{padding:26px;border-radius:var(--r-md);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+.skill:hover{transform:translateY(-5px);box-shadow:var(--shadow-up);border-color:var(--accent)}
+.skill .ic{width:48px;height:48px;border-radius:14px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;margin-bottom:18px;transition:background-color .3s ease,color .3s ease}
+.skill:hover .ic{background:var(--accent);color:var(--accent-ink)}
+.skill .ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.skill .ic .glyph{font-size:1.5rem;line-height:1;font-weight:600}
+.skill h3{font-size:1.05rem;margin-bottom:6px}
+.skill p{font-size:.95rem}
+
+/* Projects */
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.proj{padding:0;overflow:hidden;display:flex;flex-direction:column;transition:transform .4s ease,box-shadow .4s ease}
+.proj:hover{transform:translateY(-6px);box-shadow:var(--shadow-up)}
+.cover{aspect-ratio:16/10;background:var(--accent-soft);overflow:hidden;border-bottom:1px solid var(--line)}
+.cover svg{width:100%;height:100%;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.proj:hover .cover svg{transform:scale(1.06)}
+.proj-body{padding:26px 28px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.proj-body h3{margin:0;font-size:1.3rem}
+.proj-body .tags{margin-top:auto;padding-top:6px}
+.proj-body .btn{align-self:flex-start;margin-top:8px}
+.a{fill:var(--accent)}.as{fill:var(--accent-soft)}.s{fill:var(--surface)}.l{fill:var(--line)}.m{fill:var(--muted)}.i{fill:var(--ink)}
+.sa{stroke:var(--accent)}.sl{stroke:var(--line)}.sm{stroke:var(--muted)}
+
+/* Timeline */
+.timeline{position:relative;max-width:860px}
+.timeline::before{content:"";position:absolute;left:170px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.tl{display:grid;grid-template-columns:170px 1fr;position:relative;padding-bottom:40px}
+.tl:last-child{padding-bottom:0}
+.tl-year{font-weight:600;color:var(--muted);font-size:.98rem;padding-top:2px}
+.tl-body{padding-left:36px;position:relative}
+.tl-body::before{content:"";position:absolute;left:-6px;top:9px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.tl:first-child .tl-body::before{background:var(--accent)}
+.tl-body h3{font-size:1.2rem;font-weight:650}
+.tl-body .org{color:var(--accent);font-weight:600;margin:2px 0 8px}
+.tl-body p{color:var(--muted);max-width:34em}
+
+/* Education */
+.edus{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.edu{border-radius:var(--r-md)}
+.edu .yrs{display:inline-block;margin-bottom:16px;padding:5px 12px;border-radius:999px;background:var(--accent-soft);font-size:.88rem;font-weight:600}
+.edu h3{margin-bottom:4px}
+.edu .deg{color:var(--accent);font-weight:600;margin-bottom:10px}
+
+/* Achievements */
+.band{background:var(--band);color:var(--band-ink);border-radius:44px;margin-inline:20px;padding:96px 0}
+.band .sec-head h2{color:var(--band-ink)}
+.band .sec-head p{color:var(--band-muted)}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:28px}
+.stat{border-top:1px solid color-mix(in srgb,var(--band-ink) 18%,transparent);padding-top:22px}
+.stat b{display:block;font-family:var(--num);font-weight:500;font-size:clamp(2.2rem,4.4vw,3.6rem);line-height:1;letter-spacing:-.04em}
+.stat span{display:block;margin-top:12px;color:var(--band-muted);font-size:.95rem;line-height:1.45}
+
+/* Certificates */
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cert{display:block;width:100%;text-align:left;padding:0;border-radius:var(--r-md);overflow:hidden;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);transition:transform .35s ease,box-shadow .35s ease}
+.cert:hover{transform:translateY(-5px);box-shadow:var(--shadow-up)}
+.cert .th{aspect-ratio:4/3;overflow:hidden;background:var(--accent-soft)}
+.cert .th img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.cert:hover .th img{transform:scale(1.07)}
+.cert .cap{padding:16px 20px 18px}
+.cert .cap b{display:block;font-weight:600;font-size:1rem;line-height:1.35}
+.cert .cap span{color:var(--muted);font-size:.9rem}
+dialog{border:0;padding:14px;border-radius:26px;background:var(--surface);color:var(--ink);width:min(920px,92vw);box-shadow:0 40px 80px -20px rgba(0,0,0,.5)}
+dialog::backdrop{background:rgba(10,12,18,.62);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+dialog[open]{animation:pop .3s ease}
+@keyframes pop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+dialog img{width:100%;border-radius:16px}
+dialog p{padding:14px 8px 4px;color:var(--muted);text-align:center}
+.dlg-x{position:absolute;right:22px;top:22px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:1.4rem;line-height:1}
+
+/* Contact */
+.contact{text-align:center}
+.contact h2{font-size:clamp(2.4rem,6.4vw,5rem);line-height:1.04;letter-spacing:-.035em;font-weight:650;max-width:11em;margin-inline:auto}
+.contact .sub{margin:20px auto 32px;max-width:30em;color:var(--muted)}
+.contact .btn{padding:18px 38px;font-size:1.1rem}
+.links{margin-top:64px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px;text-align:left}
+.link{display:flex;flex-direction:column;gap:10px;padding:20px;border-radius:var(--r-md);background:var(--surface);border:1px solid var(--line);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;min-width:0}
+.link:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:var(--shadow)}
+.link svg{width:22px;height:22px;fill:none;stroke:var(--accent);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.link small{color:var(--muted);font-size:.85rem}
+.link b{font-weight:600;font-size:.98rem;overflow-wrap:anywhere}
+.foot{padding:36px 0 44px;color:var(--muted);font-size:.9rem}
+.foot .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px}
+
+/* Reveal */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+/* ============ Responsive ============ */
+@media (max-width:1040px){
+  .skills{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .links{grid-template-columns:repeat(3,1fr)}
+  .b-str{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .menu-btn{display:grid}
+  .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;padding:10px 20px 20px;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:var(--shadow);display:none}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:14px 16px;font-size:1.02rem}
+  .hero-grid{grid-template-columns:1fr;gap:64px;min-height:0}
+  .hero{padding-top:32px}
+  .hero-art{order:-1;width:min(300px,74%);margin-top:12px}
+  .hero-copy{text-align:left}
+  .bento{grid-template-columns:1fr}
+  .b-bio,.b-edu,.b-int,.b-do,.b-str{grid-column:auto}
+  .projects{grid-template-columns:1fr}
+  .edus{grid-template-columns:1fr}
+  .certs{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .sec{padding:76px 0}
+  .band{margin-inline:10px;border-radius:30px;padding:72px 0}
+  .skills,.certs,.b-str{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .links{grid-template-columns:1fr 1fr}
+  .timeline::before{left:6px}
+  .tl{grid-template-columns:1fr}
+  .tl-year{padding-left:36px;margin-bottom:4px}
+  .tl-body{padding-left:36px}
+  .tl-body::before{left:0}
+  .hero-cta .btn{flex:1 1 auto}
+  .card{padding:24px}
+  .cf2{right:-4%}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv,.js .hero-copy>*,.js .hero-art{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-edu" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.2 2.7 3 6 3s6-1.8 6-3v-4.5"/></symbol>
+  <symbol id="i-research" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+  <symbol id="i-ai" viewBox="0 0 24 24"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8z"/><path d="M19 15l.7 1.8 1.8.7-1.8.7L19 20l-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+  <symbol id="i-data" viewBox="0 0 24 24"><path d="M4 20V11M10 20V4M16 20v-6M2 20h20"/></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r=".4"/></symbol>
+  <symbol id="i-motion" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></symbol>
+  <symbol id="i-content" viewBox="0 0 24 24"><path d="M4 20l1-4L16.5 4.5a2 2 0 013 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 3z"/><path d="M21 4L9 13"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3 21l1.6-4.9A9 9 0 1112 21a9 9 0 01-4.3-1.1z"/><path d="M9 9c0 3 3 6 6 6l1.2-1.6-2-1-1 .7a4 4 0 01-2-2l.7-1-1-2z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="container nav-in">
+    <a class="brand" href="#home" aria-label="Башкы бет">
+      <span class="mono" data-bind="initials">АЖ</span>
+      <span data-bind="name">Аты-жөнүңүз</span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Башкы бет</a></li>
+        <li><a href="#about">Мен жөнүндө</a></li>
+        <li><a href="#skills">Көндүмдөр</a></li>
+        <li><a href="#projects">Долбоорлор</a></li>
+        <li><a href="#experience">Тажрыйба</a></li>
+        <li><a href="#education">Билим</a></li>
+        <li><a href="#contact">Байланыш</a></li>
+      </ul>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Түстү алмаштыруу">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><use id="themeUse" href="#i-moon"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Менюну ачуу" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="lattice" viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-width="1">
+      <defs>
+        <pattern id="lat" width="50" height="50" patternUnits="userSpaceOnUse">
+          <path d="M25 0l25 25-25 25L0 25z"/><circle cx="25" cy="25" r="8"/>
+        </pattern>
+      </defs>
+      <rect width="400" height="400" fill="url(#lat)" stroke="none"/>
+    </svg>
+    <div class="ring"></div>
+  </div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1>Салам,<br>мен <span data-bind="name">Аты-жөнүңүз</span></h1>
+      <p class="role">Мен — <span data-bind="role">педагог, изилдөөчү жана санарип долбоорлордун автору</span></p>
+      <p class="intro">Билим берүүнү, тилди жана технологияны бириктирип, адамдарга пайдалуу долбоорлорду жасайм. Араб тилин окутам, изилдөө жүргүзөм жана сайттарды иштеп чыгам.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#about">Мен жөнүндө</a>
+        <a class="btn btn-primary" href="#projects">Иштеримди көрүү</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="orbit" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width=".5" aria-hidden="true"><circle cx="100" cy="100" r="98" stroke-dasharray="2 5"/></svg>
+      <div class="arch-line" aria-hidden="true"></div>
+      <div class="arch">
+        <!-- Өз сүрөтүңүздү коюу үчүн: src="..." ордуна сүрөттүн жолун жазыңыз (мис. photo.jpg) -->
+        <img id="heroPhoto" alt="Аты-жөнүңүздүн профессионалдык сүрөтү" width="420" height="525"
+          src="foto/jeke foto.jpg" viewBox='0 0 420 525'%3E%3Crect width='420' height='525' fill='%23DCE3FB'/%3E%3Ccircle cx='210' cy='215' r='78' fill='%23B6C3F3'/%3E%3Cpath d='M60 525c0-105 66-165 150-165s150 60 150 165z' fill='%23B6C3F3'/%3E%3C/svg%3E">
+      </div>
+      <span class="chip-float cf1"><i></i>Билим берүү</span>
+      <span class="chip-float cf2"><i></i>AI</span>
+      <span class="chip-float cf3"><i></i>Веб-дизайн</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="sec" id="about">
+  <div class="container">
+    <div class="sec-head rv">
+      <h2>Мен жөнүндө</h2>
+      <p>Кыска жана так: ким экенимди жана эмне менен алектенгенимди бул жерден көрө аласыз.</p>
+    </div>
+    <div class="bento">
+      <article class="card b-bio rv">
+        <h3>Биография</h3>
+        <p class="lead">Билим берүү, тил жана технологиянын кесилишинде иштейм. Араб тилин окутам, изилдөө жүргүзөм, санарип долбоорлорду өзүм иштеп чыгам.</p>
+      </article>
+      <article class="card b-edu rv" style="--d:.08s">
+        <h3>Билими</h3>
+        <ul class="dots">
+          <li><strong>Араб тили жана адабияты</strong><br>Бакалавр</li>
+          <li><strong>Окутуу методикасы</strong><br>Магистратура</li>
+        </ul>
+      </article>
+      <article class="card b-int rv">
+        <h3>Кызыккан тармактарым</h3>
+        <div class="tags">
+          <span class="tag">Араб тили</span><span class="tag">Педагогика</span><span class="tag">Жасалма интеллект</span>
+          <span class="tag">Веб-дизайн</span><span class="tag">Изилдөө</span><span class="tag">Санарип контент</span>
+        </div>
+      </article>
+      <article class="card b-do rv" style="--d:.08s">
+        <h3>Эмне менен алектенем</h3>
+        <ul class="dots">
+          <li>Араб тилин жана окуу программаларын окутуу</li>
+          <li>Билим берүү жана маалымат сайттарын жасоо</li>
+          <li>AI куралдары менен контент жана долбоор түзүү</li>
+        </ul>
+      </article>
+      <article class="card b-str rv">
+        <p class="lbl">Күчтүү жактарым</p>
+        <div><h3>Тартип</h3><p>Иштерди убагында жана ырааттуу бүтүрөм.</p></div>
+        <div><h3>Тактык</h3><p>Деталдарга көңүл бурам, текшерип тапшырам.</p></div>
+        <div><h3>Чыгармачылык</h3><p>Кадимки маселеге жаңы чечим издейм.</p></div>
+        <div><h3>Үйрөнүү</h3><p>Жаңы технологияны тез өздөштүрөм.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="sec" id="skills">
+  <div class="container">
+    <div class="sec-head rv">
+      <h2>Көндүмдөр</h2>
+      <p>Күн сайын колдонгон негизги багыттарым.</p>
+    </div>
+    <div class="skills">
+      <article class="card skill rv"><div class="ic"><span class="glyph" aria-hidden="true">ع</span></div><h3>Араб тили</h3><p>Окутуу, котормо жана тилдик материалдар даярдоо.</p></article>
+      <article class="card skill rv" style="--d:.05s"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-edu"/></svg></div><h3>Билим берүү</h3><p>Сабак жана окуу программаларын түзүү.</p></article>
+      <article class="card skill rv" style="--d:.1s"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-research"/></svg></div><h3>Изилдөө</h3><p>Маалымат табуу, салыштыруу жана корутунду жазуу.</p></article>
+      <article class="card skill rv" style="--d:.15s"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-ai"/></svg></div><h3>AI жана Prompt Engineering</h3><p>Жасалма интеллект менен иштөөнүн так ыкмалары.</p></article>
+      <article class="card skill rv"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-data"/></svg></div><h3>Маалыматтарды талдоо</h3><p>Сандарды тартипке салып, жыйынтык чыгаруу.</p></article>
+      <article class="card skill rv" style="--d:.05s"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-web"/></svg></div><h3>Веб-дизайн</h3><p>Ыңгайлуу жана адаптивдүү сайттар жасоо.</p></article>
+      <article class="card skill rv" style="--d:.1s"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-motion"/></svg></div><h3>Motion дизайн</h3><p>Интерфейске жана видеого жеңил анимация кошуу.</p></article>
+      <article class="card skill rv" style="--d:.15s"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-content"/></svg></div><h3>Контент түзүү</h3><p>Тексттер, постторлор жана окуу материалдары.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="sec" id="projects">
+  <div class="container">
+    <div class="sec-head rv">
+      <h2>Долбоорлор</h2>
+      <p>Өзүм жасаган иштерден тандалмалар. «Көрүү» баскычын басып, ар бирин ачып көрүңүз.</p>
+    </div>
+    <div class="projects">
+
+      <article class="card proj rv">
+        <div class="cover" aria-hidden="true"><svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="640" height="400" class="as"/>
+          <rect x="70" y="50" width="500" height="310" rx="18" class="s"/><path d="M70 68a18 18 0 0118-18h464a18 18 0 0118 18v22H70z" class="l"/>
+          <circle cx="92" cy="70" r="5" class="m"/><circle cx="110" cy="70" r="5" class="m"/><circle cx="128" cy="70" r="5" class="m"/>
+          <path d="M120 250v-60a40 40 0 0180 0v60z" class="a"/>
+          <rect x="230" y="120" width="140" height="12" rx="6" class="i"/><rect x="230" y="144" width="90" height="8" rx="4" class="l"/>
+          <rect x="230" y="190" width="310" height="26" rx="8" class="as"/><rect x="230" y="226" width="310" height="26" rx="8" class="l"/><rect x="230" y="262" width="310" height="26" rx="8" class="as"/><rect x="230" y="298" width="310" height="26" rx="8" class="l"/>
+          <circle cx="250" cy="203" r="6" class="a"/><circle cx="250" cy="275" r="6" class="a"/>
+        </svg></div>
+        <div class="proj-body">
+          <h3>Медресе үчүн веб-сайт</h3>
+          <p>Борбаш медресеси үчүн студенттердин маалымат базасы: тизме, издөө жана тартиптүү сактоо.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <a class="btn btn-sm" href="#">Көрүү</a>
+        </div>
+      </article>
+
+      <article class="card proj rv" style="--d:.08s">
+        <div class="cover" aria-hidden="true"><svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="640" height="400" class="as"/>
+          <rect x="70" y="50" width="500" height="310" rx="18" class="s"/><path d="M70 68a18 18 0 0118-18h464a18 18 0 0118 18v22H70z" class="l"/>
+          <circle cx="92" cy="70" r="5" class="m"/><circle cx="110" cy="70" r="5" class="m"/><circle cx="128" cy="70" r="5" class="m"/>
+          <rect x="88" y="104" width="464" height="170" rx="12" class="as"/>
+          <circle cx="480" cy="148" r="22" class="a"/>
+          <path d="M88 274l110-110 70 70 60-60 110 100z" class="m" opacity=".35"/><path d="M200 274l90-96 100 96z" class="a"/>
+          <rect x="88" y="296" width="170" height="14" rx="7" class="i"/><rect x="88" y="320" width="260" height="8" rx="4" class="l"/>
+          <rect x="450" y="298" width="102" height="34" rx="17" class="a"/>
+        </svg></div>
+        <div class="proj-body">
+          <h3>Кыргызстан Travel</h3>
+          <p>Кыргызстан боюнча саякат сайты: жерлер, маршруттар жана кыргызча маалымат бир жерде.</p>
+          <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span></div>
+          <a class="btn btn-sm" href="#">Көрүү</a>
+        </div>
+      </article>
+
+      <article class="card proj rv">
+        <div class="cover" aria-hidden="true"><svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="640" height="400" class="as"/>
+          <rect x="70" y="50" width="500" height="310" rx="18" class="s"/><path d="M70 68a18 18 0 0118-18h464a18 18 0 0118 18v22H70z" class="l"/>
+          <circle cx="92" cy="70" r="5" class="m"/><circle cx="110" cy="70" r="5" class="m"/><circle cx="128" cy="70" r="5" class="m"/>
+          <rect x="94" y="110" width="132" height="100" rx="12" class="as"/><rect x="254" y="110" width="132" height="100" rx="12" class="as"/><rect x="414" y="110" width="132" height="100" rx="12" class="a"/>
+          <rect x="94" y="224" width="90" height="9" rx="4" class="i"/><rect x="254" y="224" width="90" height="9" rx="4" class="i"/><rect x="414" y="224" width="90" height="9" rx="4" class="i"/>
+          <rect x="94" y="244" width="60" height="7" rx="3" class="l"/><rect x="254" y="244" width="60" height="7" rx="3" class="l"/><rect x="414" y="244" width="60" height="7" rx="3" class="l"/>
+          <rect x="94" y="286" width="132" height="52" rx="12" class="l"/><rect x="254" y="286" width="132" height="52" rx="12" class="l"/><rect x="414" y="286" width="132" height="52" rx="12" class="l"/>
+        </svg></div>
+        <div class="proj-body">
+          <h3>Онлайн каталог — ҮйМаркет</h3>
+          <p>Курулуш жана үй оңдоо товарларын тандап, салыштырып көрүүгө арналган платформа.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <a class="btn btn-sm" href="#">Көрүү</a>
+        </div>
+      </article>
+
+      <article class="card proj rv" style="--d:.08s">
+        <div class="cover" aria-hidden="true"><svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="640" height="400" class="as"/>
+          <path d="M320 120c-50-30-120-34-200-10v200c80-24 150-20 200 10z" class="s"/><path d="M320 120c50-30 120-34 200-10v200c-80-24-150-20-200 10z" class="s"/>
+          <path d="M320 120v200" class="sl" stroke-width="3" fill="none"/>
+          <rect x="150" y="160" width="120" height="9" rx="4" class="l"/><rect x="150" y="184" width="100" height="9" rx="4" class="l"/><rect x="150" y="208" width="116" height="9" rx="4" class="l"/>
+          <rect x="372" y="160" width="110" height="9" rx="4" class="l"/><rect x="372" y="184" width="90" height="9" rx="4" class="l"/>
+          <text x="426" y="268" text-anchor="middle" font-size="64" class="a" font-family="serif">ع</text>
+          <circle cx="320" cy="70" r="22" class="a"/><path d="M308 70l12-12 12 12-12 12z" class="s"/>
+        </svg></div>
+        <div class="proj-body">
+          <h3>Билим берүү долбоору</h3>
+          <p>Араб тили боюнча сабак планы, көнүгүү жана окуу материалдарынын топтому.</p>
+          <div class="tags"><span class="tag">Методика</span><span class="tag">Контент</span><span class="tag">Араб тили</span></div>
+          <a class="btn btn-sm" href="#">Көрүү</a>
+        </div>
+      </article>
+
+      <article class="card proj rv">
+        <div class="cover" aria-hidden="true"><svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="640" height="400" class="as"/>
+          <rect x="100" y="80" width="190" height="240" rx="22" class="s"/><rect x="130" y="110" width="130" height="90" rx="12" class="a"/>
+          <rect x="130" y="218" width="100" height="10" rx="5" class="i"/><rect x="130" y="240" width="130" height="8" rx="4" class="l"/><rect x="130" y="260" width="70" height="8" rx="4" class="l"/>
+          <circle cx="420" cy="150" r="70" class="a" opacity=".9"/><rect x="380" y="170" width="150" height="150" rx="26" class="i"/>
+          <circle cx="455" cy="245" r="38" class="s" opacity=".14"/>
+          <rect x="320" y="90" width="60" height="14" rx="7" class="l"/><rect x="320" y="112" width="40" height="14" rx="7" class="l"/>
+        </svg></div>
+        <div class="proj-body">
+          <h3>Дизайн долбоорлору</h3>
+          <p>Логотип, баннер жана интерфейс макеттери: бир стилде, таза жана окууга ыңгайлуу.</p>
+          <div class="tags"><span class="tag">Веб-дизайн</span><span class="tag">Motion</span><span class="tag">Брендинг</span></div>
+          <a class="btn btn-sm" href="#">Көрүү</a>
+        </div>
+      </article>
+
+      <article class="card proj rv" style="--d:.08s">
+        <div class="cover" aria-hidden="true"><svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="640" height="400" class="as"/>
+          <path d="M200 140L320 90l120 60M200 140l30 120M440 150l-30 110M230 260l180 0M320 90v90M320 180L230 260M320 180l90 80" class="sm" stroke-width="2" fill="none" opacity=".5"/>
+          <circle cx="200" cy="140" r="14" class="s"/><circle cx="440" cy="150" r="14" class="s"/><circle cx="230" cy="260" r="14" class="s"/><circle cx="410" cy="260" r="14" class="s"/><circle cx="320" cy="90" r="14" class="s"/>
+          <circle cx="320" cy="180" r="34" class="a"/><path d="M320 160l5 15 15 5-15 5-5 15-5-15-15-5 15-5z" class="s"/>
+          <rect x="80" y="300" width="230" height="46" rx="23" class="s"/><rect x="100" y="318" width="120" height="9" rx="4" class="l"/>
+          <rect x="350" y="52" width="210" height="46" rx="23" class="i"/><rect x="372" y="70" width="110" height="9" rx="4" class="s" opacity=".5"/>
+        </svg></div>
+        <div class="proj-body">
+          <h3>AI менен жасалган долбоорлор</h3>
+          <p>Prompt долбоорлоо менен тез жасалган контент, сүрөт жана автоматташтырылган иштер.</p>
+          <div class="tags"><span class="tag">Prompt Engineering</span><span class="tag">AI</span><span class="tag">Автоматташтыруу</span></div>
+          <a class="btn btn-sm" href="#">Көрүү</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="sec" id="experience">
+  <div class="container">
+    <div class="sec-head rv">
+      <h2>Тажрыйба</h2>
+      <p>Акыркы иштерден баштап, тартиби боюнча.</p>
+    </div>
+    <ol class="timeline" style="list-style:none;margin:0;padding:0">
+      <li class="tl rv">
+        <div class="tl-year">2025 — азыр</div>
+        <div class="tl-body"><h3>Веб-дизайнер жана иштеп чыгуучу</h3><div class="org">Жеке долбоорлор</div><p>Медресе, туризм жана онлайн каталог үчүн сайттарды долбоорлоп, бүтүрүү.</p></div>
+      </li>
+      <li class="tl rv">
+        <div class="tl-year">2024 — азыр</div>
+        <div class="tl-body"><h3>AI жана Prompt Engineering боюнча изилдөөчү</h3><div class="org">Өз изилдөөм</div><p>Жасалма интеллект куралдарын контент жана окутууга ылайыкташтыруу.</p></div>
+      </li>
+      <li class="tl rv">
+        <div class="tl-year">2023 — 2025</div>
+        <div class="tl-body"><h3>Араб тили окутуучусу</h3><div class="org">Билим берүү долбоору</div><p>Сабак жана окуу материалдарын даярдоо, окуучулардын жетишкендигин көзөмөлдөө.</p></div>
+      </li>
+      <li class="tl rv">
+        <div class="tl-year">2022 — 2023</div>
+        <div class="tl-body"><h3>Изилдөөчү жана контент автору</h3><div class="org">Изилдөө долбоору</div><p>Маалымат жыйноо, талдоо жана окуу контентин жазуу.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="sec" id="education" style="padding-top:40px">
+  <div class="container">
+    <div class="sec-head rv">
+      <h2>Билим</h2>
+      <p>Расмий окуу жана өз алдынча өнүгүү.</p>
+    </div>
+    <div class="edus">
+      <article class="card edu rv"><span class="yrs">2016 — 2020</span><h3>[Университеттин аты]</h3><div class="deg">Араб тили жана адабияты, бакалавр</div><p>Тилдик база, котормо жана адабият боюнча негизги даярдык.</p></article>
+      <article class="card edu rv" style="--d:.08s"><span class="yrs">2020 — 2022</span><h3>[Окуу жайдын аты]</h3><div class="deg">Окутуу методикасы, магистратура</div><p>Заманбап окутуу ыкмалары жана илимий изилдөө иши.</p></article>
+      <article class="card edu rv" style="--d:.16s"><span class="yrs">2023 — азыр</span><h3>Онлайн курстар</h3><div class="deg">AI, маалымат талдоо, веб-дизайн</div><p>Кесипти жаңыртуучу кыска жана практикалык программалар.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="band" id="achievements" aria-labelledby="achTitle">
+  <div class="container">
+    <div class="sec-head rv">
+      <h2 id="achTitle">Жетишкендиктер</h2>
+      <p>Сандар менен кыскача жыйынтык.</p>
+    </div>
+    <div class="stats">
+      <div class="stat rv"><b data-count="15" data-suffix="+">0</b><span>аткарылган долбоор</span></div>
+      <div class="stat rv" style="--d:.06s"><b data-count="4" data-suffix="">0</b><span>жыл тажрыйба</span></div>
+      <div class="stat rv" style="--d:.12s"><b data-count="8" data-suffix="">0</b><span>сертификат</span></div>
+      <div class="stat rv" style="--d:.18s"><b data-count="300" data-suffix="+">0</b><span>долбоорлорго катышкан адам</span></div>
+      <div class="stat rv" style="--d:.24s"><b data-count="3" data-suffix="">0</b><span>иштеген тил жана багыт</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section class="sec" id="certificates">
+  <div class="container">
+    <div class="sec-head rv">
+      <h2>Сертификаттар</h2>
+      <p>Чоңойтуп көрүү үчүн сертификатты басыңыз.</p>
+    </div>
+    <div class="certs" id="certGrid"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec contact" id="contact" style="padding-top:40px">
+  <div class="container">
+    <h2 class="rv">Биргеликте долбоор жасайлы</h2>
+    <p class="sub rv" style="--d:.08s">Идеяңыз же тапшырмаңыз болсо, кыскача жазыңыз. Бир нече күндүн ичинде жооп берем.</p>
+    <a class="btn btn-primary rv" style="--d:.16s" href="mailto:salam@example.kg" data-link="mail">Мага жазуу</a>
+    <div class="links">
+      <a class="link rv" href="tel:+996700000000" data-link="phone"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg><small>Телефон</small><b data-bind="phone">+996 700 000 000</b></a>
+      <a class="link rv" style="--d:.05s" href="mailto:salam@example.kg" data-link="mail"><svg viewBox="0 0 24 24"><use href="#i-mail"/></svg><small>Email</small><b data-bind="email">salam@example.kg</b></a>
+      <a class="link rv" style="--d:.1s" href="https://t.me/username" target="_blank" rel="noopener" data-link="telegram"><svg viewBox="0 0 24 24"><use href="#i-tg"/></svg><small>Telegram</small><b data-bind="telegram">@username</b></a>
+      <a class="link rv" style="--d:.15s" href="https://instagram.com/username" target="_blank" rel="noopener" data-link="instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg><small>Instagram</small><b data-bind="instagram">@username</b></a>
+      <a class="link rv" style="--d:.2s" href="https://wa.me/996700000000" target="_blank" rel="noopener" data-link="whatsapp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><small>WhatsApp</small><b data-bind="phone">+996 700 000 000</b></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <span>© <span id="yr">2026</span> <span data-bind="name">Аты-жөнүңүз</span></span>
+    <span>Кыргызстан</span>
+  </div>
+</footer>
+
+<dialog id="certDlg" aria-label="Сертификат">
+  <button class="dlg-x" type="button" id="certClose" aria-label="Жабуу">×</button>
+  <img id="certImg" alt="">
+  <p id="certCap"></p>
+</dialog>
+
+<script>
+/* =====================================================
+   КОНТЕНТТИ ОҢДОО: төмөнкү эки блокту өзгөртүңүз.
+   ===================================================== */
+
+/* 1) Жеке маалымат (сайттын бардык жеринде автоматтык алмашат) */
+const PROFILE = {
+  name: "Аты-жөнүңүз",
+  role: "педагог, изилдөөчү жана санарип долбоорлордун автору",
+  phone: "+996 700 000 000",
+  email: "salam@example.kg",
+  telegram: "username",     // @ белгисиз
+  instagram: "username",    // @ белгисиз
+  whatsapp: "996700000000"  // + жана боштуксуз
+};
+
+/* 2) Сертификаттар. Өз сүрөтүңүз болсо, img талаасына жолун жазыңыз (мис. img: "cert1.jpg") */
+const CERTS = [
+  { t: ["Араб тилин окутуунун", "методикасы"], o: "Билим берүү борбору", y: 2024 },
+  { t: ["AI жана Prompt", "Engineering"], o: "Онлайн курс", y: 2024 },
+  { t: ["Маалыматтарды талдоо", "негиздери"], o: "Онлайн курс", y: 2023 },
+  { t: ["Веб-дизайн жана", "UI/UX"], o: "Онлайн курс", y: 2023 },
+  { t: ["Motion дизайн", "негиздери"], o: "Чыгармачыл студия", y: 2025 },
+  { t: ["Илимий изилдөө", "методдору"], o: "Академиялык программа", y: 2022 }
+];
+
+/* ===================== Кодду өзгөртпөсөңүз да болот ===================== */
+(function () {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Profile binding */
+  const initials = PROFILE.name.split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  const fmt = {
+    name: PROFILE.name, role: PROFILE.role, phone: PROFILE.phone, email: PROFILE.email,
+    telegram: '@' + PROFILE.telegram, instagram: '@' + PROFILE.instagram, initials
+  };
+  $$('[data-bind]').forEach(el => { const k = el.dataset.bind; if (fmt[k]) el.textContent = fmt[k]; });
+  const hrefs = {
+    phone: 'tel:' + PROFILE.phone.replace(/\s+/g, ''),
+    mail: 'mailto:' + PROFILE.email,
+    telegram: 'https://t.me/' + PROFILE.telegram,
+    instagram: 'https://instagram.com/' + PROFILE.instagram,
+    whatsapp: 'https://wa.me/' + PROFILE.whatsapp
+  };
+  $$('[data-link]').forEach(el => { const h = hrefs[el.dataset.link]; if (h) el.setAttribute('href', h); });
+  document.title = PROFILE.name + ' — ' + PROFILE.role;
+  $('#yr').textContent = new Date().getFullYear();
+
+  /* Theme */
+  const root = document.documentElement;
+  const themeUse = $('#themeUse');
+  const prefersDark = matchMedia('(prefers-color-scheme: dark)');
+  function applyTheme(t) {
+    if (t) root.setAttribute('data-theme', t);
+    const dark = root.getAttribute('data-theme') === 'dark' || (!root.getAttribute('data-theme') && prefersDark.matches);
+    themeUse.setAttribute('href', dark ? '#i-sun' : '#i-moon');
+  }
+  try { const saved = localStorage.getItem('theme'); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
+  applyTheme();
+  $('#themeBtn').addEventListener('click', () => {
+    const dark = root.getAttribute('data-theme') === 'dark' || (!root.getAttribute('data-theme') && prefersDark.matches);
+    const next = dark ? 'light' : 'dark';
+    applyTheme(next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+
+  /* Navbar */
+  const nav = $('#nav');
+  const onScroll = () => nav.classList.toggle('scrolled', scrollY > 12);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  const menuBtn = $('#menuBtn'), links = $('#navLinks');
+  function setMenu(open) {
+    links.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Менюну жабуу' : 'Менюну ачуу');
+  }
+  menuBtn.addEventListener('click', () => setMenu(!links.classList.contains('open')));
+  $$('a', links).forEach(a => a.addEventListener('click', () => setMenu(false)));
+  addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+
+  /* Scroll reveal */
+  if ('IntersectionObserver' in window && !reduce) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: .12, rootMargin: '0px 0px -6% 0px' });
+    $$('.rv').forEach(el => io.observe(el));
+  } else { $$('.rv').forEach(el => el.classList.add('in')); }
+
+  /* Counters */
+  function count(el) {
+    const end = +el.dataset.count, suf = el.dataset.suffix || '';
+    if (reduce) { el.textContent = end + suf; return; }
+    const t0 = performance.now(), dur = 1400;
+    (function tick(t) {
+      const p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(end * e) + (p === 1 ? suf : '');
+      if (p < 1) requestAnimationFrame(tick);
+    })(t0);
+  }
+  if ('IntersectionObserver' in window) {
+    const co = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { count(e.target); co.unobserve(e.target); }
+    }), { threshold: .6 });
+    $$('[data-count]').forEach(el => co.observe(el));
+  } else { $$('[data-count]').forEach(count); }
+
+  /* Scroll spy */
+  const map = {};
+  $$('a', links).forEach(a => map[a.getAttribute('href').slice(1)] = a);
+  const order = ['home', 'about', 'skills', 'projects', 'experience', 'education', 'contact'];
+  function spy() {
+    let cur = 'home';
+    const y = scrollY + innerHeight * .35;
+    order.forEach(id => { const s = document.getElementById(id); if (s && s.offsetTop <= y) cur = id; });
+    const ach = document.getElementById('achievements'), cer = document.getElementById('certificates'), con = document.getElementById('contact');
+    if (con && con.offsetTop > y && ach && ach.offsetTop <= y) cur = 'education';
+    if (cer && cer.offsetTop <= y && con && con.offsetTop > y) cur = 'education';
+    Object.keys(map).forEach(k => map[k].classList.toggle('active', k === cur));
+  }
+  addEventListener('scroll', spy, { passive: true }); spy();
+
+  /* Certificates */
+  function certSvg(c) {
+    const l1 = c.t[0] || '', l2 = c.t[1] || '';
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Georgia,'Times New Roman',serif">
+<rect width="800" height="600" fill="#FFFFFF"/>
+<rect x="28" y="28" width="744" height="544" fill="none" stroke="#2547D9" stroke-width="3"/>
+<rect x="44" y="44" width="712" height="512" fill="none" stroke="#2547D9" stroke-width="1" opacity=".5"/>
+<text x="400" y="150" text-anchor="middle" font-size="22" letter-spacing="8" fill="#5B6372">СЕРТИФИКАТ</text>
+<line x1="330" y1="178" x2="470" y2="178" stroke="#2547D9" stroke-width="2"/>
+<text x="400" y="280" text-anchor="middle" font-size="40" fill="#12151C">${l1}</text>
+<text x="400" y="332" text-anchor="middle" font-size="40" fill="#12151C">${l2}</text>
+<text x="400" y="400" text-anchor="middle" font-size="22" fill="#5B6372">${c.o}</text>
+<circle cx="400" cy="478" r="34" fill="#2547D9"/><circle cx="400" cy="478" r="26" fill="none" stroke="#fff" stroke-width="1.5"/>
+<text x="400" y="486" text-anchor="middle" font-size="20" fill="#fff" font-family="sans-serif">${c.y}</text>
+</svg>`;
+    return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+  }
+  const grid = $('#certGrid');
+  CERTS.forEach((c, i) => {
+    const src = c.img || certSvg(c), title = c.t.join(' ');
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'cert rv'; b.style.setProperty('--d', (i % 3) * .07 + 's');
+    b.setAttribute('aria-label', title + ' сертификатын чоңойтуу');
+    b.innerHTML = `<div class="th"><img loading="lazy" alt="" src="${src}"></div><div class="cap"><b>${title}</b><span>${c.o}, ${c.y}</span></div>`;
+    b.addEventListener('click', () => {
+      $('#certImg').src = src; $('#certImg').alt = title;
+      $('#certCap').textContent = `${title}. ${c.o}, ${c.y}`;
+      if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
+    });
+    grid.appendChild(b);
+  });
+  const dlg = $('#certDlg');
+  $('#certClose').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+  // newly added .rv elements: reveal them
+  if ('IntersectionObserver' in window && !reduce) {
+    const io2 = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io2.unobserve(e.target); }
+    }), { threshold: .12 });
+    $$('.cert').forEach(el => io2.observe(el));
+  } else { $$('.cert').forEach(el => el.classList.add('in')); }
+})();
+</script>
+</body>
+</html>
